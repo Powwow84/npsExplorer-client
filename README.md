@@ -1,6 +1,6 @@
 # npsExplorer
 
-### Link: [nps-explorer.netlify.app](https://nps-explorer.netlify.app/)
+### Link: [nps-explorer.netlify.app](https://national-parks-explorer.netlify.app/)
 
 Discover and explore the beauty of national parks with **npsExplorer**. Learn about park details, activities, history, and view stunning images as you create your personalized destination itinerary of parks across the country!
 
