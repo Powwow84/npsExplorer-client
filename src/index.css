@@ -22,7 +22,7 @@ code {
 .navIcon {
   margin: 1rem;
   text-decoration: none;
-  color: white;
+  color:  rgb(51, 61, 41);
   /* color: rgb(166, 138, 100); */
   /* color: rgb(1, 29, 4); */
   font-weight: 500;
@@ -215,14 +215,34 @@ code {
   margin: .3rem .3rem;
 }
 
-.footer {
-  position: fixed;
-  bottom: 0;
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
   width: 100%;
-  background-color: rgb(51, 61, 41); 
-  /* background-color: rgb(194, 197, 170);  */
-  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+  margin: 0;
+  border-bottom: .1rem solid;
 }
+
+.bar {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  align-items: center;
+}
+
+.header p {
+  font-size: 2rem; 
+  font-weight: bold; 
+  color:  rgb(51, 61, 41)
+}
+
+.largeHeader {
+  display: none
+}
+
+
 
 .footer > footer {
   display: flex;
@@ -374,12 +394,47 @@ code {
     width: 90rem;
   }
 
+  .bar {
+    display: none
+  }
+
+  .largeHeader {
+    display:flex;
+    justify-content: space-between;
+    width: 90rem
+
+  }
+
+  .menu {
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    width:50%
+  }
+
 }
 
 @media (min-width: 60rem) and (max-width: 92rem) {
 
   .carouselHead {
     width: 60rem;
+  }
+
+  .bar {
+    display:none
+  }
+
+  .largeHeader {
+    display: flex;
+    justify-content: space-between;
+    width: 60rem
+  }
+
+  .menu {
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    width:50%
   }
 
 }
@@ -389,6 +444,10 @@ code {
 
   .carouselHead {
     width: 30rem;
+  }
+
+  .bar {
+    width: 30rem
   }
 
 }
@@ -418,6 +477,7 @@ code {
   .detailName {
     padding: 1rem 0
   }
+
 
 }
 
@@ -469,3 +529,9 @@ opacity: 1;
 cursor: pointer;
 left: calc(4% + 1px);
 border: solid red; */
+
+
+/* hamburger */
+.hamburger-react {
+  color: rgb(51, 61, 41)
+}

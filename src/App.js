@@ -10,6 +10,7 @@ import axios from "axios"
 
 import './App.css';
 
+import Destination from "./components/partials/Header"
 import Destinations from "./components/pages/Destinations"
 import Home from "./components/pages/Home"
 import Login from "./components/pages/Login"
@@ -189,6 +190,7 @@ function App() {
                   userDestinations={userDestinations}
                   handleAddExperienceClick={handleAddExperienceClick}
                   setUserDestinations={setUserDestinations}
+                  removeDestination={removeDestination}
                 />}
               />
             </Routes>
