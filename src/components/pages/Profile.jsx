@@ -127,14 +127,16 @@ export default function Profile({ currentUser, handleLogout }) {
 
     const experiencesExistHeader = (
         <div className='experienceHeader'>
-            <h2 className='leftAligin experienceHeaderText noMargin'>Past adventures</h2>
+            <h2 className='leftAligin experienceHeaderText noMargin'>Past Experiences</h2>
         </div>
     )
+    
     const experiencesDontExistHeader = (
         <div className='experienceHeader'>
             <h2 className='leftAligin experienceHeaderText noMargin'>Go visit some national parks and journal your experiences!</h2>
         </div>
     )
+
     const experiences = experiencesList.data?.map((experience, i) => {
         return (
             <div onClick={() => handleClick(experience)} key={`experience-${i}`}
@@ -168,13 +170,6 @@ export default function Profile({ currentUser, handleLogout }) {
 
     const profileView = (
         <div className='profileView'>
-            <div className='logoutContainer'>
-                <div className='logoutElementsContainer' onClick={() => handleLogout()} >
-                <img src={require("../../media/logout.png")}
-                    className='logoutImg'></img>
-                <p className='logoutText'>Logout</p>
-                </div>
-            </div>
             <div className='profileHeader'>
                 <div className='profileHeaderLeft'>
                     <img src={userImage} className='profileImg'></img>
@@ -185,10 +180,10 @@ export default function Profile({ currentUser, handleLogout }) {
                 </div>
                 <div className='profileHeaderRight'>
                     <h3 className='noMargin leftAligin vistCount'>{destinationsCount}</h3>
-                    <p className='noMargin vistType'>Destinations</p>
+                    <p className='noMargin vistType'>Saved Destinations</p>
                     <hr className='lineBreak'></hr>
                     <h3 className='noMargin leftAligin vistCount'>{experiencesCount}</h3>
-                    <p className='noMargin vistType'>Experiences</p>
+                    <p className='noMargin vistType'>Logged Experiences</p>
                 </div>
             </div>
             <div>

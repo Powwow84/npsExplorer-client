@@ -20,7 +20,7 @@ code {
 }
 
 .navIcon {
-  margin: 1rem;
+  margin: 1rem .3rem;
   text-decoration: none;
   color:  rgb(51, 61, 41);
   /* color: rgb(166, 138, 100); */
@@ -38,7 +38,7 @@ code {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: .5rem 1rem 0 1rem;
+  margin: 5rem 1rem 0 1rem;
   width: 90%;
 }
 
@@ -219,10 +219,13 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 3rem;
+  height: 4rem;
   width: 100%;
   margin: 0;
   border-bottom: .1rem solid;
+  position: fixed;
+  z-index: 10;
+  background-color: rgba(164, 172, 134, 1) ;
 }
 
 .bar {
@@ -274,6 +277,7 @@ code {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 3.5rem;
 }
 
 .detailsHeader {
@@ -385,6 +389,8 @@ code {
   width: 90vw
 }
 
+/* Destintion styles */
+
 
 
 /* media queries for the parks home page */
@@ -412,6 +418,11 @@ code {
     width:50%
   }
 
+  .navIcon {
+    margin: 1rem 1rem;
+    font-size: 1.2rem;
+  }
+
 }
 
 @media (min-width: 60rem) and (max-width: 92rem) {
@@ -435,6 +446,11 @@ code {
     align-items: center;
     justify-content: flex-end;
     width:50%
+  }
+
+  .navIcon {
+    margin: 1rem 1rem;
+    font-size: 1.2rem;
   }
 
 }
@@ -498,6 +514,10 @@ code {
     margin: .7rem 1rem;
   }
 
+  .sizingBox{
+    margin-top: 5.5rem;
+  }
+
 }
 
 
@@ -506,13 +526,15 @@ code {
 .react-multiple-carousel__arrow.react-multiple-carousel__arrow--left { 
   min-width: 1.5rem;
   min-height: 1.5rem;
-  left: .01rem 
+  left: .01rem; 
+  z-index: 1;
 }
 
 .react-multiple-carousel__arrow.react-multiple-carousel__arrow--right {
   min-width: 1.5rem;
   min-height: 1.5rem;
   right: .01rem;
+  z-index: 1;
 }
 
 

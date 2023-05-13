@@ -8,13 +8,13 @@ const ParkContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   border: 7px solid #ccc;
   padding: 0;
   margin: .5rem 1rem;
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 7%/5%;
   border: 0.1rem solid rgb(51, 61, 41);
   background-color: rgb(240, 239, 225) ;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
@@ -27,7 +27,8 @@ const ParkContainer = styled.div`
 `;
 
 const DestinationsTitle = styled.h2`
-  margin-bottom: -0.4rem;
+  margin-top: 5.5rem;
+  margin-bottom: 1rem;
   text-align: center;
 `;
 
@@ -38,7 +39,7 @@ const ButtonsContainer = styled.div`
   margin-top: -25px;
   margin-bottom: -30px;
   background-color: grey
-  padding: 0
+  padding: 0;
   @media (max-width: 480px) {
     flex-direction: row;
   }
@@ -105,7 +106,7 @@ const ExperienceMessage = styled.p`
   justify-content: center;
   align-items: center;
   font: 15px; 
-  margin: 1.05rem 1rem;
+  margin: 1.25rem 1rem;
 
 `;
 
@@ -114,7 +115,7 @@ const ParkImage = styled.img`
     height: 12rem;
     object-fit: cover;
     margin-bottom: 1rem; 
-    border-radius: 20px;
+    border-radius: 5%/7%;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); 
     @media (max-width: 480px) {
     width: 90%;
@@ -130,6 +131,7 @@ const ParkText = styled.div`
     justify-content: space-between;
     text-align: left;
     width: 90%;
+    height: 5rem;
     padding: 0;
     font-family: 'Baloo 2', sans-serif;
     margin: 2rem 0.5rem;
@@ -174,7 +176,7 @@ const DestinationsContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-items: center;
-    margin: 0.5rem auto 0;
+    margin: 0 auto 0;
     width: 90%;
     
 
@@ -182,20 +184,25 @@ const DestinationsContainer = styled.div`
 `;
 
 const HeaderLocationContainer = styled.div`
-    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
     line-height: 1;
     width: 90%;
+    height: 4rem;
     padding: 0.3rem 0;
     background: rgb(51, 61, 41);
-    border-radius: 8%/30%;
+    border-radius: 4%/15%;
     color: white;
     margin-bottom: 1.5rem;
     margin-top: 1.5rem;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    border: solid red
 
 
-  h3 { 
-    margin: 0.3rem;
+  p { 
+    margin: 0.3rem .5rem 0 .5rem;
+ 
   }
   p {
     font-size: 16px;
@@ -324,7 +331,7 @@ const DestinationsPage = (props) => {
         return (
             <ParkContainer key={destination}>
                 <HeaderLocationContainer>
-                    <h3>{park?.fullName}</h3>
+                    <p className='parkTitle'>{park?.fullName}</p>
                     <p>
                         {park?.addresses[0]?.city}, {park?.addresses[0]?.stateCode}
                     </p>

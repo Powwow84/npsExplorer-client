@@ -10,7 +10,7 @@ import axios from "axios"
 
 import './App.css';
 
-import Destination from "./components/partials/Header"
+import Header from "./components/partials/Header"
 import Destinations from "./components/pages/Destinations"
 import Home from "./components/pages/Home"
 import Login from "./components/pages/Login"
@@ -148,7 +148,11 @@ function App() {
     <div className="App">
       <div className="content">
         <Router>
-          <Layout>
+          <Layout
+          handleLogout={handleLogout}
+          currentUser={currentUser}
+          setCurrentUser={setCurrentUser}
+          >
             <Routes>
               <Route
                 path='/'
