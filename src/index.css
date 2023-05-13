@@ -28,6 +28,17 @@ code {
   font-weight: 500;
 }
 
+.logo {
+  display:flex;
+  flex-direction: row;
+  width: 20rem;
+  padding: 0;
+  margin: .3rem;
+  text-decoration: none;
+  color:  rgb(51, 61, 41);
+  font-weight: 500;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -238,7 +249,9 @@ code {
 .header p {
   font-size: 2rem; 
   font-weight: bold; 
-  color:  rgb(51, 61, 41)
+  color:  rgb(51, 61, 41);
+  padding: 0;
+  margin: 0;
 }
 
 .largeHeader {
@@ -407,8 +420,8 @@ code {
   .largeHeader {
     display:flex;
     justify-content: space-between;
-    width: 90rem
-
+    width: 90rem;
+    height: 4rem;
   }
 
   .menu {
@@ -438,7 +451,8 @@ code {
   .largeHeader {
     display: flex;
     justify-content: space-between;
-    width: 60rem
+    width: 60rem;
+    height: 4rem;
   }
 
   .menu {
@@ -448,10 +462,10 @@ code {
     width:50%
   }
 
-  .navIcon {
+  /* .navIcon {
     margin: 1rem 1rem;
     font-size: 1.2rem;
-  }
+  } */
 
 }
 
@@ -463,10 +477,12 @@ code {
   }
 
   .bar {
-    width: 30rem
+    width: 30rem;
+    height: 4rem;
   }
 
 }
+
 
 @media (min-width: 35rem) {
 

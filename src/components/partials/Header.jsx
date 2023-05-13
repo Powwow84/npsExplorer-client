@@ -32,7 +32,7 @@ export default function Header(props) {
       </div>
       <div className='largeHeader'>
         <div>
-        <Link to='/' className="navIcon"><p>NPS Explorer</p></Link>
+        <Link to='/' className="logo"><p>NPS Explorer</p></Link>
         </div>
         <div className="menu">
           <Link to="/" className="navIcon" >
