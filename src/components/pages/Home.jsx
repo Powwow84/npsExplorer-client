@@ -11,7 +11,7 @@ import usStateCodes from "../../usStatesArray";
 
 export default function Home(props) {
   const [message, setMessage] = useState('');
-  const [hideCarousel, setHideCarousel] = useState('true')
+  const [hideCarousel, setHideCarousel] = useState(false)
   const { parksInfo, 
           handleAddDestinationClick,
           userDestinations,
