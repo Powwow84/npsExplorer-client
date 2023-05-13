@@ -14,7 +14,7 @@ const Container = styled.div`
   background-image: url("https://www.nps.gov/common/uploads/structured_data/49F34094-B893-7DD6-5AE0F0220724B0EF.jpg");
   background-size: cover;
   background-position: center;
-  padding: 1rem;
+  
 
 
 `;

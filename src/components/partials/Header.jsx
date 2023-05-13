@@ -15,18 +15,18 @@ export default function Header(props) {
       <Hamburger toggled={isOpen} toggle={setOpen} direction="left"/>
       {isOpen && (
         <div className="menu">
-          <Link to="/" className="navIcon" >
+          <Link to="/" className="navIcon" onClick={()=> setOpen(false)}>
             Home
           </Link>
-          <Link to="/destinations" className="navIcon" >
+          <Link to="/destinations" className="navIcon" onClick={()=> setOpen(false)}>
             Destinations
           </Link>
-          <Link to="/users/profile" className="navIcon" >
+          <Link to="/users/profile" className="navIcon" onClick={()=> setOpen(false)}>
             Profile
           </Link>
           {currentUser?
-          <Link to="/users/login" className="navIcon" onClick={()=> handleLogout()}>Log out</Link> :
-          <Link to="/users/login" className="navIcon">Login</Link>}
+          <Link to="/users/login" className="navIcon" onClick={()=> {handleLogout(); setOpen(false)}}>Log out</Link> :
+          <Link to="/users/login" className="navIcon" onClick={()=> setOpen(false)}>Login</Link>}
         </div>
       )}
       </div>
