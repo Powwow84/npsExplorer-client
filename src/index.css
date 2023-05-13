@@ -61,6 +61,13 @@ code {
   width: 99%;
 }
 
+.hideSorting {
+    margin: .5rem;
+    border: .1rem solid;
+    border-radius: 3% / 20%;
+    color: rgb(51, 61, 41);
+  }
+
 /* .searchInput {
   width:90%
 } */
