@@ -1,3 +1,5 @@
+// Note** We dont actually use this page. this was originally inteded as a separate search page but we figured out how to render the hame page with just the search results
+
 import { useLocation, Link } from "react-router-dom";
 
 export default function SearchResults(props) {

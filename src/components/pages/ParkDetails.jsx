@@ -108,8 +108,8 @@ export default function ParkDetails(props) {
           <button 
               onClick={() => removeDestination(parksInfo[id].id)} className="tileRemoveDestination">         
               </button>}
-              {!showText && (
-              <button onClick={handleClick} className="tileAddExperience">
+          {!showText && (
+            <button onClick={handleClick} className="tileAddExperience">
           </button> )}
           </div>)}
           {showText && <p className='addedText'>An experience added to your profile</p>}
